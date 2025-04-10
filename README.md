@@ -37,4 +37,4 @@ If a number is already a multiple of 100, it is left unchanged. Do not modify th
 
 ---
 
-Each member completed their assigned task on a separate branch containing their student number in the branch name. All tasks were implemented in the `SimpleFunctions.java` file.
+Each member completed their assigned task on a separate branch containing their student number in the branch name. All tasks were implemented in the `SimpleFunctions.java` file. Once a member is done with their task, they must write at least two tests for the person whose Task # is directly after them. The last person in the group, you writes a test for the person whose task is Task 1. The tests must follow FIRST principles and the Arrange-Act-Assert form. 
