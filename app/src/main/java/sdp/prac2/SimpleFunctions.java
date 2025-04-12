@@ -20,4 +20,15 @@ public class SimpleFunctions {
         }
         return sum; // returns the sum of the elements in a at the indices specified in b
     }
+
+    //Task5 - @author : g23r5770
+    public boolean Task5(List<Integer> list ){ 
+        //iterate through the list
+        for(int i = 0 ; i <list.size()-1;i++){
+            //if the number being checked first is greater than the number after it than it is not sorted
+            if(list.get(i)>list.get(i+1)){ return false;}
+        }
+        //otherwise true
+        return true;
+    }
 }
