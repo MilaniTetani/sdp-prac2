@@ -31,4 +31,20 @@ public class SimpleFunctions {
         //otherwise true
         return true;
     }
+       // Task4 - @author: g22s5882
+public List<Integer> Task4(List<Integer> a, List<Integer> b) {
+    if (a.size() != b.size()) {
+        return null; // return null if sizes don't match
+    }
+
+    List<Integer> result = new ArrayList<>();
+    int n = a.size();
+
+    for (int i = 0; i < n; i++) {
+        int product = a.get(i) * b.get(n - 1 - i);
+        result.add(product);
+    }
+
+    return result;
+}
 }
