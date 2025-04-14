@@ -26,6 +26,39 @@ class AppTest {
         assertEquals(expected, sf.Task2(input));
     }
 
+    // TASK6 TESTS //
+    @Test
+    void testAlreadyMultiplesOf100() {
+        // Test when the list contains only multiples of 100
+        List<Integer> input = Arrays.asList(100, 200, 300);
+        List<Integer> expected = Arrays.asList(100, 200, 300);
+        assertEquals(expected, Task6(input));
+    }
+
+    @Test
+    void testNonMultiplesOf100() {
+        // Test when the list contains numbers not multiples of 100
+        List<Integer> input = Arrays.asList(101, 250, 399);
+        List<Integer> expected = Arrays.asList(200, 300, 400);
+        assertEquals(expected, Task6(input));
+    }
+
+    @Test
+    void testMixedList() {
+        // Test when the list contains both multiples and non-multiples of 100
+        List<Integer> input = Arrays.asList(100, 150, 299);
+        List<Integer> expected = Arrays.asList(100, 200, 300);
+        assertEquals(expected, Task6(input));
+    }
+
+    @Test
+    void testEmptyList() {
+        // Test when the list is empty
+        List<Integer> input = Arrays.asList();
+        List<Integer> expected = Arrays.asList();
+        assertEquals(expected, Task6(input));
+    }
+
 }
 
 
