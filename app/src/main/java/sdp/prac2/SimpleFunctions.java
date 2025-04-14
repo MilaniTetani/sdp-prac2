@@ -22,7 +22,7 @@ public class SimpleFunctions {
     }
 
     // this is task 2 g23v4108
-    public static List<String> Firstcharacter(List<String> ListString) {
+    public static List<String> Task2(List<String> ListString) {
         List<String> newlist = new ArrayList<>(); // creating a new array to take in  the string when the first character has been removed
         for(String str : ListString){
             if(str != null && !str.isEmpty()){ // now it is checking whether the string we wanna remove the first character in is mept or null
