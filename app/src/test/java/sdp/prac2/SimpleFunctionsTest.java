@@ -32,7 +32,7 @@ class AppTest {
     public void testtask3parenthesis(){
         SimpleFunctions bracket = new SimpleFunctions();
         String input = "((()))";
-        boolean answer = bracket.Task3(input)
+        boolean answer = bracket.Task3(input);
         assertTrue(answer);
 
     }
