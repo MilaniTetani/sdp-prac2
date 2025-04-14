@@ -10,6 +10,8 @@ import java.util.Arrays;
 import java.util.List;
 
 class AppTest {
+
+    //       Task 2 Tests
      @Test
     public void testTask2_removesFirstCharacter() {
         SimpleFunctions sf = new SimpleFunctions();
