@@ -60,6 +60,20 @@ class AppTest {
         assertEquals(expected, Task6(input));
     }
 
+ // Task 5 Tests
+     @Test
+    void testSortedList() {
+        // Test when the list is already sorted
+        List<Integer> input = Arrays.asList(100, 200, 300);
+        assertTrue(sf.Task5(input));
+    }
+
+    @Test
+    void testUnsortedList() {
+        // Test when the list is not sorted
+        List<Integer> input = Arrays.asList(300, 200, 100);
+        assertFalse(sf.Task5(input));
+    }
 
 
 
