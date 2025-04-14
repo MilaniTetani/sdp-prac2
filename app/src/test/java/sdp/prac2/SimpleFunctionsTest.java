@@ -27,7 +27,42 @@ class AppTest {
         List<String> expected = Arrays.asList("", "og");
         assertEquals(expected, sf.Task2(input));
     }
+// test for task3
+    @Test
+    public void testtask3parenthesis(){
+        SimpleFunctions bracket = new SimpleFunctions();
+        String input = "((()))";
+        boolean answer = bracket.Task3(input)
+        assertTrue(answer);
 
+    }
+
+    @Test
+    public void testparenthesis () {
+        SimpleFunctions bracket = new SimpleFunctions();
+        String input  = "()))";
+        boolean answer = bracket.Task3(input);
+        assertFalse(answer);
+        }
+
+    @Test
+    public void emptystring(){
+        SimpleFunctions bracket = new SimpleFunctions();
+        String input  = "";
+        boolean answer = bracket.Task3(input);
+        assertTrue(answer);
+        }
+
+    @Test
+    public void testcorrectbracket() {
+        SimpleFunctions bracket = new SimpleFunctions();
+        String input = ")(";
+        boolean answer = bracket.Task3(input);
+
+        assertFalse(answer);
+
+
+    }
 
     //      TASK6 TESTS      //
     @Test
@@ -38,6 +73,7 @@ class AppTest {
         List<Integer> expected = Arrays.asList(100, 200, 300);
         assertEquals(expected, sf.Task6(input));
     }
+
 
     @Test
     void testNonMultiplesOf100() {
