@@ -21,6 +21,18 @@ public class SimpleFunctions {
         return sum; // returns the sum of the elements in a at the indices specified in b
     }
 
+    // this is task 2 g23v4108
+    public static List<String> Firstcharacter(List<String> ListString) {
+        List<String> newlist = new ArrayList<>(); // creating a new array to take in  the string when the first character has been removed
+        for(String str : ListString){
+            if(str != null && !str.isEmpty()){ // now it is checking whether the string we wanna remove the first character in is mept or null
+                newlist.add(str.substring(1));
+            }
+        }
+        return newlist;
+    }
+
+
     //Task5 - @author : g23r5770
     public boolean Task5(List<Integer> list ){ 
         //iterate through the list
