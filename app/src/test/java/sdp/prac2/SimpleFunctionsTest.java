@@ -64,6 +64,7 @@ class AppTest {
      @Test
     void testSortedList() {
         // Test when the list is already sorted
+         SimpleFunctions sf = new SimpleFunctions();
         List<Integer> input = Arrays.asList(100, 200, 300);
         assertTrue(sf.Task5(input));
     }
@@ -71,6 +72,7 @@ class AppTest {
     @Test
     void testUnsortedList() {
         // Test when the list is not sorted
+         SimpleFunctions sf = new SimpleFunctions();
         List<Integer> input = Arrays.asList(300, 200, 100);
         assertFalse(sf.Task5(input));
     }
