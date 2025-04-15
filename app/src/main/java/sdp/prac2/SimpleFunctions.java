@@ -59,4 +59,21 @@ public List<Integer> Task4(List<Integer> a, List<Integer> b) {
 
     return result;
 }
+
+public static List<Integer> Task6(List<Integer> integerList) {
+    //Need to initialize a new list
+    List<Integer> roundedList = new ArrayList<>();
+    
+    for (int num : integerList) {
+        // Check if the number is already a multiple of 100
+        if (num % 100 == 0) {
+            roundedList.add(num);
+        } else {
+            // Otherwise, round it up to the next multiple of 100
+            roundedList.add(((num / 100) + 1) * 100);
+        }
+    }
+    return roundedList;
+}
+
 }
