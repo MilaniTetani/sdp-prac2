@@ -66,36 +66,37 @@ public class SimpleFunctions {
         return true;
     }
        // Task4 - @author: g22s5882
-public List<Integer> Task4(List<Integer> a, List<Integer> b) {
-    if (a.size() != b.size()) {
-        return null; // return null if sizes don't match
-    }
-
-    List<Integer> result = new ArrayList<>();
-    int n = a.size();
-
-    for (int i = 0; i < n; i++) {
-        int product = a.get(i) * b.get(n - 1 - i);
-        result.add(product);
-    }
-
-    return result;
-}
-
-public List<Integer> Task6(List<Integer> integerList) {
-    //Need to initialize a new list
-    List<Integer> roundedList = new ArrayList<>();
-    
-    for (int num : integerList) {
-        // Check if the number is already a multiple of 100
-        if (num % 100 == 0) {
-            roundedList.add(num);
-        } else {
-            // Otherwise, round it up to the next multiple of 100
-            roundedList.add(((num / 100) + 1) * 100);
+    public List<Integer> Task4(List<Integer> a, List<Integer> b) {
+        if (a.size() != b.size()) {
+            return null; // return null if sizes don't match
         }
+
+        List<Integer> result = new ArrayList<>();
+        int n = a.size();
+
+        for (int i = 0; i < n; i++) {
+            int product = a.get(i) * b.get(n - 1 - i);
+            result.add(product);
+        }
+
+        return result;
     }
-    return roundedList;
-}
+
+    // Task 6 - @author: g23s6707
+    public List<Integer> Task6(List<Integer> integerList) {
+        //Need to initialize a new list
+        List<Integer> roundedList = new ArrayList<>();
+        
+        for (int num : integerList) {
+            // Check if the number is already a multiple of 100
+            if (num % 100 == 0) {
+                roundedList.add(num);
+            } else {
+                // Otherwise, round it up to the next multiple of 100
+                roundedList.add(((num / 100) + 1) * 100);
+            }
+        }
+        return roundedList;
+    }
 
 }
