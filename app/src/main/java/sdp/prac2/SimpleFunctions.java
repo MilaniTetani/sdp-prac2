@@ -31,7 +31,7 @@ public class SimpleFunctions {
         }
         return newlist;
     }
-   // this is task 3 -- g23s6277
+   // this is task 3 -- g23s6277 // Noks
    public boolean Task3(String string) {
     int count = 0;
 
