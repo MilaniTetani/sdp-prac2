@@ -82,7 +82,7 @@ public List<Integer> Task4(List<Integer> a, List<Integer> b) {
     return result;
 }
 
-public static List<Integer> Task6(List<Integer> integerList) {
+public List<Integer> Task6(List<Integer> integerList) {
     //Need to initialize a new list
     List<Integer> roundedList = new ArrayList<>();
     

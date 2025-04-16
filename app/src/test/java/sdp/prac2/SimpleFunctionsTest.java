@@ -110,21 +110,6 @@ class AppTest {
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     //      TASK6 TESTS      //
     @Test
     void testAlreadyMultiplesOf100() {
@@ -181,27 +166,26 @@ class AppTest {
 
     //Task 1 tests
 
-
-    public class Task1Tests {
-
-        @Test
-        public void testValidIndexes() {
-            List<Integer> a = Arrays.asList(10, 20, 30, 40, 50);
-            List<Integer> b = Arrays.asList(0, 2, 4);
-            int result = new Task1().Task1(a, b);
-            int expected = 10 + 30 + 50;
-            assertEquals(expected, result);
-        }
-    
-        @Test
-        public void testInvalidIndexes() {
-            List<Integer> a = Arrays.asList(5, 15, 25, 35);
-            List<Integer> b = Arrays.asList(-1, 0, 2, 10);
-            int result = new Task1().Task1(a, b);
-            int expected = 5 + 25;
-            assertEquals(expected, result);
-        }
+    @Test
+    public void testValidIndexes() {
+        SimpleFunctions sf = new SimpleFunctions(); 
+        List<Integer> a = Arrays.asList(10, 20, 30, 40, 50);
+        List<Integer> b = Arrays.asList(0, 2, 4);
+        int result = sf.Task1(a, b);
+        int expected = 10 + 30 + 50;
+        assertEquals(expected, result);
     }
+    
+    @Test
+    public void testInvalidIndexes() {
+        SimpleFunctions sf = new SimpleFunctions();          
+        List<Integer> a = Arrays.asList(5, 15, 25, 35);
+        List<Integer> b = Arrays.asList(-1, 0, 2, 10);
+        int result = sf.Task1(a, b);
+        int expected = 5 + 25;
+        assertEquals(expected, result);
+    }
+    
 }
 
 
