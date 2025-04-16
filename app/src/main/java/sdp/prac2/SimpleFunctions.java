@@ -31,6 +31,28 @@ public class SimpleFunctions {
         }
         return newlist;
     }
+   // this is task 3 -- g23s6277
+   public boolean Task3(String string) {
+    int count = 0;
+
+    for (int i = 0; i < string.length(); i++) {
+        char ch = string.charAt(i);
+
+        if (ch == '(') {
+            count++;
+        } else if (ch == ')') {
+            count--;
+        }
+
+        
+        if (count < 0) {
+            return false;
+        }
+    }
+
+    
+    return count == 0;
+    }  
 
 
     //Task5 - @author : g23r5770

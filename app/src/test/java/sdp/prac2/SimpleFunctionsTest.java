@@ -63,6 +63,67 @@ class AppTest {
 
 
     }
+    // test for task 4 
+
+    @Test
+    public void equalSizedList() {
+        SimpleFunctions sf = new SimpleFunctions();
+        List<Integer> a = Arrays.asList(1, 2, 3);
+        List<Integer> b = Arrays.asList(4, 5, 6);
+        List<Integer> expected = Arrays.asList(6, 10, 12); // 1×6, 2×5, 3×4
+        assertEquals(expected, sf.Task4(a, b));
+    }
+
+    @Test
+    public void equalSizedList2() {
+        SimpleFunctions sf = new SimpleFunctions();
+        List<Integer> a = Arrays.asList(2, 4);
+        List<Integer> b = Arrays.asList(5, 7);
+        List<Integer> expected = Arrays.asList(14, 20); // 2×7, 4×5
+        assertEquals(expected, sf.Task4(a, b));
+    }
+
+    @Test
+    public void notMatchingListSizes() {
+        SimpleFunctions sf = new SimpleFunctions();
+        List<Integer> a = Arrays.asList(1, 2, 3);
+        List<Integer> b = Arrays.asList(4, 5);
+        assertNull(sf.Task4(a, b));
+    }
+
+    @Test
+    public void EmptyLists() {
+        SimpleFunctions sf = new SimpleFunctions();
+        List<Integer> a = Arrays.asList();
+        List<Integer> b = Arrays.asList();
+        List<Integer> expected = Arrays.asList(); // empty result
+        assertEquals(expected, sf.Task4(a, b));
+    }
+
+    @Test
+    public void oneElementLists() {
+        SimpleFunctions sf = new SimpleFunctions();
+        List<Integer> a = Arrays.asList(9);
+        List<Integer> b = Arrays.asList(3);
+        List<Integer> expected = Arrays.asList(27); // 9×3
+        assertEquals(expected, sf.Task4(a, b));
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     //      TASK6 TESTS      //
     @Test
