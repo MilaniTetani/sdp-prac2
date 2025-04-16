@@ -11,7 +11,7 @@ import java.util.List;
 
 class AppTest {
 
-    //       Task 2 Tests
+    //       Task 2 Tests - done by 22T4905
      @Test
     public void testTask2_removesFirstCharacter() {
         SimpleFunctions sf = new SimpleFunctions();
